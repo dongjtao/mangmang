@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		
+		<input type="button" name="" id="" value="关闭" onclick="close1()" />
+		<input type="button" name="" id="" value="点击" onclick="myfun()" />
+		
+		高度：<input type="text" name="" id="height" value="" />
+		宽度：<input type="text" name="" id="width" value="" />
+		<input type="button" name="" id="" value="点击定制" onclick="myfun2()" />
+		
+		<script type="text/javascript">
+			function myfun(){
+				var b = window.confirm("你吃饭了吗");
+				if(b){
+					document.write("他吃饭了")
+				}else{
+					document.write("没吃饭")
+				}
+				
+				
+			}
+			
+			
+			
+			
+			function close1(){
+				
+				window.close();
+			}
+			
+			
+			function myfun2(){
+				var height = document.getElementById("height").value;
+				var width = document.getElementById("width").value;
+				// alert(height);
+				window.open("index2.html","aa","width="+width+",height="+height,)
+				
+				
+				
+			}
+			
+			
+		</script>
+		
+	</body>
+</html>
